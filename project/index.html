@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=S, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="google-books.js" type="module"></script>
+    <script src="/DOM.js" type="module"></script>
+    
+    <link rel="stylesheet" href="index.css" />
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    
+      <!-- Banner -->
+      <header class="head">
+      <img src="/images/google-books.jpg" 
+      width="40%"
+      alt="google-logo" class="logo">
+      </img>
+      </header>
+
+      <!-- search  -->
+      <div class="search">
+          <input
+            class="search__field"
+            id="searchField";
+            type="text";
+            placeholder="Search by title..."
+          />
+          
+          <button class="search__button" id="searchButton">Search</button>
+      </div>
+      
+   
+   
+      <!-- Results -->
+    
+      <div class="results" id="result"></div>
+  </body>
+</html>

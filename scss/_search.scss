@@ -1,0 +1,26 @@
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+
+  &__field {
+    width: 250px;
+    padding: 10px;
+    border-radius: 3px;
+    border-color: aliceblue;
+    @include center();
+  }
+
+  &__button {
+    background-color: #dedfe0;
+    border-color: aliceblue;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+}

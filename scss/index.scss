@@ -1,0 +1,84 @@
+$font-style: "Rubik", sans-serif;
+
+@use "book-list";
+@use "search";
+@use "media";
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+* {
+  font-family: $font-style;
+  padding: 1;
+  margin: 1%;
+}
+
+.head {
+  @include center();
+
+  &__head {
+    @include center();
+  }
+
+  @include media.phone();
+  @include media.tablet();
+  @include media.tablet-landscape();
+}
+
+.search {
+  @include media.phone();
+  @include media.tablet();
+  @include media.tablet-landscape();
+}
+
+.result {
+  @include media.phone();
+  @include media.tablet();
+  @include media.tablet-landscape();
+}
+
+.results div {
+  @include media.phone();
+  @include media.tablet();
+  @include media.tablet-landscape();
+}
+
+.results div:hover {
+  @include media.phone();
+  @include media.tablet();
+  @include media.tablet-landscape();
+}
+
+.results img {
+  max-width: 100%;
+  height: 600px;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px;
+  @include media.phone {
+    max-width: 310px;
+    height: 310px;
+  }
+  @include media.tablet {
+    max-width: 310px;
+    height: 310px;
+  }
+  @include media.tablet-landscape {
+    max-width: 700px;
+    height: 600px;
+  }
+}
+.results h4 {
+  @include media.phone();
+  @include media.tablet();
+  @include media.tablet-landscape();
+}
+.results p {
+  @include media.phone();
+  @include media.tablet();
+  @include media.tablet-landscape();
+}
